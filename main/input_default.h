@@ -223,7 +223,7 @@ protected:
 	Map<int, VibrationInfo> joy_vibration;
 
 public:
-	virtual bool is_key_pressed(int p_scancode) const;
+	virtual bool is_key_pressed(int p_keycode) const;
 	virtual bool is_mouse_button_pressed(int p_button) const;
 	virtual bool is_joy_button_pressed(int p_device, int p_button) const;
 	virtual bool is_action_pressed(const StringName &p_action) const;

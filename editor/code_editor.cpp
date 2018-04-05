@@ -124,7 +124,7 @@ void FindReplaceBar::_unhandled_input(const Ref<InputEvent> &p_event) {
 	if (text_edit->has_focus() || (focus_owner && vbc_lineedit->is_a_parent_of(focus_owner))) {
 		bool accepted = true;
 
-		switch (k->get_scancode()) {
+		switch (k->get_keycode()) {
 			case KEY_ESCAPE: {
 				_hide_bar();
 			} break;

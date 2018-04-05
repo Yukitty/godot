@@ -549,7 +549,7 @@ void EditorAudioBus::_effect_add(int p_which) {
 void EditorAudioBus::_gui_input(const Ref<InputEvent> &p_event) {
 
 	Ref<InputEventKey> k = p_event;
-	if (k.is_valid() && k->is_pressed() && k->get_scancode() == KEY_DELETE && !k->is_echo()) {
+	if (k.is_valid() && k->is_pressed() && k->get_keycode() == KEY_DELETE && !k->is_echo()) {
 		accept_event();
 		emit_signal("delete_request");
 	}
@@ -565,7 +565,7 @@ void EditorAudioBus::_gui_input(const Ref<InputEvent> &p_event) {
 
 void EditorAudioBus::_unhandled_key_input(Ref<InputEvent> p_event) {
 	Ref<InputEventKey> k = p_event;
-	if (k.is_valid() && k->is_pressed() && !k->is_echo() && k->get_scancode() == KEY_DELETE) {
+	if (k.is_valid() && k->is_pressed() && !k->is_echo() && k->get_keycode() == KEY_DELETE) {
 		TreeItem *current_effect = effects->get_selected();
 		if (current_effect && current_effect->get_metadata(0).get_type() == Variant::INT) {
 			_delete_effect_pressed(0);

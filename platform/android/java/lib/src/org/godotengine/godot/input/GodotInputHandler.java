@@ -100,11 +100,12 @@ public class GodotInputHandler implements InputDeviceListener {
 				});
 			}
 		} else {
+			final int scanCode = event.getScanCode();
 			final int chr = event.getUnicodeChar(0);
 			queueEvent(new Runnable() {
 				@Override
 				public void run() {
-					GodotLib.key(keyCode, chr, false);
+					GodotLib.key(keyCode, scanCode, chr, false);
 				}
 			});
 		};
@@ -145,11 +146,12 @@ public class GodotInputHandler implements InputDeviceListener {
 				});
 			}
 		} else {
+			final int scanCode = event.getScanCode();
 			final int chr = event.getUnicodeChar(0);
 			queueEvent(new Runnable() {
 				@Override
 				public void run() {
-					GodotLib.key(keyCode, chr, true);
+					GodotLib.key(keyCode, scanCode, chr, true);
 				}
 			});
 		};

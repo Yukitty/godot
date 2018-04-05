@@ -1048,13 +1048,13 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_ENTER);
+	key->set_keycode(KEY_ENTER);
 	events.push_back(key);
 	key.instance();
-	key->set_scancode(KEY_KP_ENTER);
+	key->set_keycode(KEY_KP_ENTER);
 	events.push_back(key);
 	key.instance();
-	key->set_scancode(KEY_SPACE);
+	key->set_keycode(KEY_SPACE);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_BUTTON_0);
@@ -1067,7 +1067,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_SPACE);
+	key->set_keycode(KEY_SPACE);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_BUTTON_3);
@@ -1080,7 +1080,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_ESCAPE);
+	key->set_keycode(KEY_ESCAPE);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_BUTTON_1);
@@ -1093,7 +1093,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_TAB);
+	key->set_keycode(KEY_TAB);
 	events.push_back(key);
 	action["events"] = events;
 	GLOBAL_DEF("input/ui_focus_next", action);
@@ -1103,7 +1103,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_TAB);
+	key->set_keycode(KEY_TAB);
 	key->set_shift(true);
 	events.push_back(key);
 	action["events"] = events;
@@ -1114,7 +1114,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_LEFT);
+	key->set_keycode(KEY_LEFT);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_DPAD_LEFT);
@@ -1127,7 +1127,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_RIGHT);
+	key->set_keycode(KEY_RIGHT);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_DPAD_RIGHT);
@@ -1140,7 +1140,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_UP);
+	key->set_keycode(KEY_UP);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_DPAD_UP);
@@ -1153,7 +1153,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_DOWN);
+	key->set_keycode(KEY_DOWN);
 	events.push_back(key);
 	joyb.instance();
 	joyb->set_button_index(JOY_DPAD_DOWN);
@@ -1166,7 +1166,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_PAGEUP);
+	key->set_keycode(KEY_PAGEUP);
 	events.push_back(key);
 	action["events"] = events;
 	GLOBAL_DEF("input/ui_page_up", action);
@@ -1176,7 +1176,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_PAGEDOWN);
+	key->set_keycode(KEY_PAGEDOWN);
 	events.push_back(key);
 	action["events"] = events;
 	GLOBAL_DEF("input/ui_page_down", action);
@@ -1186,7 +1186,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_HOME);
+	key->set_keycode(KEY_HOME);
 	events.push_back(key);
 	action["events"] = events;
 	GLOBAL_DEF("input/ui_home", action);
@@ -1196,7 +1196,7 @@ ProjectSettings::ProjectSettings() {
 	action["deadzone"] = Variant(0.5f);
 	events = Array();
 	key.instance();
-	key->set_scancode(KEY_END);
+	key->set_keycode(KEY_END);
 	events.push_back(key);
 	action["events"] = events;
 	GLOBAL_DEF("input/ui_end", action);
